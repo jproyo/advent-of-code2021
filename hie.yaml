@@ -1,0 +1,4 @@
+cradle:
+  stack:
+    - path: "./src"
+      component: "advent-of-code2021:lib"

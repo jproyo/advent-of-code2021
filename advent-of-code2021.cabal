@@ -1,0 +1,69 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.34.4.
+--
+-- see: https://github.com/sol/hpack
+
+name:           advent-of-code2021
+version:        0.1.0.0
+category:       Fun,AOC2021
+homepage:       https://github.com/jproyo/advent-of-code2021#readme
+author:         Juan Pablo Royo Sales
+maintainer:     juanpablo.royo@gmail.com
+copyright:      Copyright (C) 2021 Juan Pablo Royo Sales
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+
+library
+  exposed-modules:
+      AoC
+  other-modules:
+      Day1
+      Day2
+      Paths_advent_of_code2021
+  hs-source-dirs:
+      src
+  default-extensions:
+      ConstraintKinds
+      DataKinds
+      DefaultSignatures
+      DeriveAnyClass
+      DeriveFunctor
+      DeriveGeneric
+      DeriveLift
+      DerivingStrategies
+      DerivingVia
+      EmptyCase
+      FlexibleContexts
+      FlexibleInstances
+      FunctionalDependencies
+      GADTs
+      GeneralizedNewtypeDeriving
+      LambdaCase
+      MultiParamTypeClasses
+      MultiWayIf
+      NoImplicitPrelude
+      OverloadedStrings
+      PartialTypeSignatures
+      PolyKinds
+      RecordWildCards
+      Rank2Types
+      RankNTypes
+      ScopedTypeVariables
+      StandaloneDeriving
+      TemplateHaskell
+      TypeApplications
+      TypeFamilies
+      TypeFamilyDependencies
+      TypeOperators
+  ghc-options: -O3 -Wall -Werror -fno-warn-partial-type-signatures -fno-warn-orphans -fconstraint-solver-iterations=0 -flate-specialise -Wincomplete-record-updates -Wincomplete-uni-patterns -Wredundant-constraints -Wno-unused-top-binds
+  build-depends:
+      base
+    , bytestring
+    , lens
+    , relude
+    , text
+  default-language: Haskell2010

@@ -1,0 +1,71 @@
+name:                advent-of-code2021
+version:             0.1.0.0
+#synopsis:
+#description:
+homepage:            https://github.com/jproyo/advent-of-code2021#readme
+license:             BSD3
+author:               Juan Pablo Royo Sales
+maintainer:          juanpablo.royo@gmail.com
+copyright:            Copyright (C) 2021 Juan Pablo Royo Sales
+category:            Fun,AOC2021
+extra-source-files:
+- README.md
+
+ghc-options:
+  - -O3
+  - -Wall
+  - -Werror
+  - -fno-warn-partial-type-signatures
+  - -fno-warn-orphans
+  - -fconstraint-solver-iterations=0
+  - -flate-specialise 
+  - -Wincomplete-record-updates
+  - -Wincomplete-uni-patterns
+  - -Wredundant-constraints
+  - -Wno-unused-top-binds
+
+default-extensions:
+  - ConstraintKinds
+  - DataKinds
+  - DefaultSignatures
+  - DeriveAnyClass
+  - DeriveFunctor
+  - DeriveGeneric
+  - DeriveLift
+  - DerivingStrategies
+  - DerivingVia
+  - EmptyCase
+  - FlexibleContexts
+  - FlexibleInstances
+  - FunctionalDependencies
+  - GADTs
+  - GeneralizedNewtypeDeriving
+  - LambdaCase
+  - MultiParamTypeClasses
+  - MultiWayIf
+  - NoImplicitPrelude
+  - OverloadedStrings
+  - PartialTypeSignatures
+  - PolyKinds
+  - RecordWildCards
+  - Rank2Types
+  - RankNTypes
+  - ScopedTypeVariables
+  - StandaloneDeriving
+  - TemplateHaskell
+  - TypeApplications
+  - TypeFamilies
+  - TypeFamilyDependencies
+  - TypeOperators
+
+dependencies:
+  - base
+  - bytestring
+  - lens
+  - relude
+  - text
+
+library:
+  source-dirs: src
+  exposed-modules:
+    - AoC
